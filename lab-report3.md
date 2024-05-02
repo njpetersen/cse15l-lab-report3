@@ -43,11 +43,11 @@ public class ListTests {
         
         List<String> list1 = new ArrayList<>();
         list1.add("a");
-        list1.add("c");
+        list1.add("b");
+        list1.add("d");
         list1.add("e");
         List<String> list2 = new ArrayList<>();
-        list2.add("b");
-        list2.add("d");
+        list2.add("c");
 
         List<String> listComparison = new ArrayList<>();
         listComparison.add("a");
