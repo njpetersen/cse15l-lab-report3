@@ -1,4 +1,6 @@
 ## eryfer ##
+
+### step 1
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -29,7 +31,7 @@ public class ListTests {
     }
 }
 ```
-
+### step 2
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -60,6 +62,8 @@ public class ListTests {
     }
 }
 ```
+### step 3
 
+### step 4
 
 
