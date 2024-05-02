@@ -49,7 +49,6 @@ public class ListTests {
         list2.add("b");
         list2.add("d");
 
-
         List<String> listComparison = new ArrayList<>();
         listComparison.add("a");
         listComparison.add("b");
