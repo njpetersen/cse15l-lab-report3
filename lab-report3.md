@@ -41,7 +41,7 @@ import java.util.List;
 public class ListTests {
 
     @Test
-    public void testMerge(){
+    public void testMerge2(){
         
         List<String> list1 = new ArrayList<>();
         list1.add("a");
