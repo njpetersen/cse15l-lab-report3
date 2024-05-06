@@ -125,5 +125,41 @@ vs
 ### Step 5
 As indicated by the runtime error from step 3, the bug in this program had to do with infinitely executing code. This infinitely executing code occured in the third while loop, where the condition `index2 < list2.size()` runs infinitely unless index2 is incremented. The original code erroneously incremented index1 instead of index2, which not only causes the while loop to never be excited, but also makes no logical sense to increment (since the third while loop adds the elements of list2 not list1). Changing the code `index1 +=1` to `index2 +=1` solves this problem by allowing the while loop to be exited and also iterating through list2 instead of list1.
 
+## Researching commands - less command ##
+### - 
+ex1:
+The command `less -N chapter-1.txt` produces the output:
+`     1 
+      2         
+      3                 
+      4 "WE HAVE SOME PLANES"
+      5 
+      6     Tuesday, September 11, 2001, dawned temperate and nearly cloudless i     6 n the eastern United States. Millions of men and women readied themselve      6 s for work. Some made their way to the Twin Towers, the signature struct      6 ures of the World Trade Center complex in New York City. Others went to       6 Arlington, Virginia, to the Pentagon. Across the Potomac River, the Unit      6 ed States Congress was back in session. At the other end of Pennsylvania      6  Avenue, people began to line up for a White House tour. In Sarasota, Fl      6 orida, President George W. Bush went for an early morning run.
+      7 
+      8     For those heading to an airport, weather conditions could not have b      8 een better for a safe and pleasant journey. Among the travelers were Moh      8 amed Atta and Abdul Aziz al Omari, who arrived at the airport in Portlan      8 d, Maine.
+      9 
+     10 INSIDE THE FOUR FLIGHTS
+     11 
+     12 Boarding the Flights
+     13 
+:
+`
 
 
+ex2:
+
+###
+ex1:
+
+ex2:
+
+###
+ex1:
+
+ex2:
+
+###
+ex1:
+
+ex2:
+### Citations
