@@ -40,6 +40,8 @@ import java.util.List;
 
 public class ListTests {
 
+    //testMerge1 method not shown for clarity, it would be here
+
     @Test
     public void testMerge2(){
         
@@ -120,4 +122,8 @@ vs
     return result;
   }
 ```
+### Step 5
+As indicated by the runtime error from step 3, the bug in this program had to do with infinitely executing code. This infinitely executing code occured in the third while loop, where the condition `index2 < list2.size()` runs infinitely unless index2 is incremented. The original code erroneously incremented index1 instead of index2, which not only causes the while loop to never be excited, but also makes no logical sense to increment (since the third while loop adds the elements of list2 not list1). Changing the code `index1 +=1` to `index2 +=1` solves this problem by allowing the while loop to be exited and also iterating through list2 instead of list1.
+
+
 
