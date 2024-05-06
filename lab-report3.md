@@ -130,7 +130,7 @@ As indicated by the runtime error from step 3, the bug in this program had to do
 ex1:
 The command `less -N chapter-1.txt` produces the output:
 `     
-      1 
+      1\ 
       2         
       3                 
       4 "WE HAVE SOME PLANES"
