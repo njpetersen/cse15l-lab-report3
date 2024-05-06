@@ -63,7 +63,7 @@ public class ListTests {
 }
 ```
 ### step 3
-
+![OutputCode](output1.jpg)
 ### step 4
 ```
 // Takes two sorted list of strings (so "a" appears before "b" and so on),
