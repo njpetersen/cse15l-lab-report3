@@ -126,7 +126,7 @@ vs
 As indicated by the runtime error from step 3, the bug in this program had to do with infinitely executing code. This infinitely executing code occured in the third while loop, where the condition `index2 < list2.size()` runs infinitely unless index2 is incremented. The original code erroneously incremented index1 instead of index2, which not only causes the while loop to never be excited, but also makes no logical sense to increment (since the third while loop adds the elements of list2 not list1). Changing the code `index1 +=1` to `index2 +=1` solves this problem by allowing the while loop to be exited and also iterating through list2 instead of list1.
 
 ## Researching commands - less command ##
-### - 
+### less -N command
 ex1:
 The command `less -N 911report/chapter-1.txt` produces the output:  
 ```     
@@ -184,15 +184,120 @@ The command `less -N biomed/rr74.txt` produces the output:
 :
 ```
 
-###
-ex1:
+The command line option `-N` adds numbers to the left side of the output indicating what line from the original file each line outputted by the less command represents. This has the use of clearing up confusion as to where exactly a line starts or ends in the original file when looking at the output, and can also be used to determine the number of lines in a file.
+
+### less -f
+ex1: 
+The command `less -f 911report` produces the output:
+```
+read error  (press RETURN)
+```
+pressing the return key changes the output to:
+```
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+```
 
 ex2:
+The command `less -f biomed/rr74.txt` produces the output:
+```
+     
+        Introduction
+        NO, which may be synthesized by any of the three
+        isoforms of NOS, is a vasodilator of the pulmonary
+        circulation in many mammals. NO has been proposed as a
+        modulator of vascular tone and structure in the pulmonary
+        circulation, and previous studies using NOS inhibitors [ 1,
+        2] suggested that inhibition of NO increases acute hypoxic
+        pulmonary vasoconstriction. Chronic NOS inhibition did not
+        lead to development of pulmonary hypertension [ 3],
+        however, possibly because of a decrease in cardiac output.
+        These discrepancies have been addressed in recent studies
+        using mice that are deficient in NOS isoforms.
+        Three isoforms of NOS are found in the lung. The
+        principle isoform that is found in the pulmonary
+        vasculature is eNOS [ 4]. iNOS is expressed in airway
+        epithelium, and airway and vascular smooth muscle [ 5, 6],
+        whereas nNOS is expressed in the bronchial epithelium and
+        lung nervous tissue [ 4, 5, 7, 8]. Thus, all three NOS
+        isoforms could contribute to modulation of pulmonary
+:
+```
 
-###
+### less -M
 ex1:
+The command `less -M biomed/rr74.txt`
+```
+      
+        Introduction
+        NO, which may be synthesized by any of the three
+        isoforms of NOS, is a vasodilator of the pulmonary
+        circulation in many mammals. NO has been proposed as a
+        modulator of vascular tone and structure in the pulmonary
+        circulation, and previous studies using NOS inhibitors [ 1,
+        2] suggested that inhibition of NO increases acute hypoxic
+        pulmonary vasoconstriction. Chronic NOS inhibition did not
+        lead to development of pulmonary hypertension [ 3],
+        however, possibly because of a decrease in cardiac output.
+        These discrepancies have been addressed in recent studies
+        using mice that are deficient in NOS isoforms.
+        Three isoforms of NOS are found in the lung. The
+        principle isoform that is found in the pulmonary
+        vasculature is eNOS [ 4]. iNOS is expressed in airway
+        epithelium, and airway and vascular smooth muscle [ 5, 6],
+        whereas nNOS is expressed in the bronchial epithelium and
+        lung nervous tissue [ 4, 5, 7, 8]. Thus, all three NOS
+        isoforms could contribute to modulation of pulmonary
+biomed/rr74.txt lines 1-23/426 5%
+```
 
 ex2:
+The command `less -M government/Alcohol_Problems/Session2-PDF.txt`
+```
+
+Session 2.
+Identifying ED Patients with Alcohol Problems
+
+Robert Woolard, MD
+Many patients in the emergency department (ED) have alcohol
+problems, and they can be identified.1 Research on techniques used
+to identify these patients has been conducted, but several areas of
+interest should be addressed by further research. We need to
+further examine and refine alcohol-screening questionnaires in the
+ED. We need to determine the sequence and combination of questions
+and tests that constitute the best screening process. We need to
+study barriers to screening, identify factors that promote
+screening implementation, and demonstrate the impact of a screening
+program in the ED. The final aim of screening must be improved
+outcomes through referral and counseling. Identification is only
+the first step in a process of care.
+Alcohol problems defined
+Alcohol problems designate a spectrum from risk behavior to
+illness, and from problematic consumption to alcohol use disorder.
+government/Alcohol_Problems/Session2-PDF.txt lines 1-23/637 3%
+```
 
 ###
 ex1:
