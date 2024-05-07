@@ -274,7 +274,7 @@ biomed/rr74.txt lines 1-23/426 5%
 ```
 
 ex2:
-The command `less -M government/Alcohol_Problems/Session2-PDF.txt`
+The command `less -M government/Alcohol_Problems/Session2-PDF.txt` outputs:
 ```
 
 Session 2.
@@ -301,6 +301,55 @@ government/Alcohol_Problems/Session2-PDF.txt lines 1-23/637 3%
 
 ###
 ex1:
+The command `less -pDemocrats 911report/preface.txt` outputs:
+```
+Democrats chosen by elected leaders from our nation's capital at a time of great
+                partisan division-have come together to present this report without dissent.
+            We have come together with a unity of purpose because our nation demands it.
+                September 11, 2001, was a day of unprecedented shock and suffering in the history of
+                the United States. The nation was unprepared. How did this happen, and how can we
+                avoid such tragedy again?
+            To answer these questions, the Congress and the President created the National
+                Commission on Terrorist Attacks Upon the United States (Public Law 107-306, November
+                27, 2002).
+            Our mandate was sweeping. The law directed us to investigate "facts and circumstances
+                relating to the terrorist attacks of September 11, 2001," including those relating
+                to intelligence agencies, law enforcement agencies, diplomacy, immigration issues
+                and border control, the flow of assets to terrorist organization911report/preface.txt
+
+```
 
 ex2:
+The command `` outputs:
+```
+          ambient conditions, hypobaric hypoxia (simulating an
+          altitude of 17,000 feet), or hyberbaric normoxia
+          (simulating sea level). Exposure was continuous, with
+          minimal interruption for animal care. At 21 days the dam
+          was removed and animals were sorted by sex. At 6 weeks
+          animals of both sexes were removed for study.
+        
+        
+          Right ventricular pressure measurements
+          RVsP was measured as previously described [ 9].
+          Briefly, mice were anesthetized with ketamine/xyalazine
+          (100/15 mg/kg), placed supine while spontaneously
+          breathing room air, and a 26-gauge needle was introduced
+          percutaneously into the thorax via a subxyphloid
+          approach; RVsP was recorded. Blood was drawn and animals
+          were killed. The thorax was opened and the lungs were
+          flushed with cold PBS. The right lung was frozen for
+          protein and RNA measurement, and the left lung was fixed
+          for histologic evaluation.
+        
+        
+          Western blotting
+          Frozen lung tissue was homogenized in ice cold 750 μl
+:
+```
+
 ### Citations
+Information about uses of the less command was gathered from:
+    `man less` command
+    [Source 1](https://phoenixnap.com/kb/less-command-in-linux)
+
