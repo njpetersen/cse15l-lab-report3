@@ -350,5 +350,5 @@ The command `` outputs:
 
 ### Citations
 Information about uses of the less command was gathered from:
-    `man less` command and the website:[Source 1](https://phoenixnap.com/kb/less-command-in-linux)
+    `man less` command and the website: [Source 1](https://phoenixnap.com/kb/less-command-in-linux)
 
