@@ -1,6 +1,8 @@
-## eryfer ##
+## Introduction for lab report 3 ##
+Hello, my name is Nathaniel Petersen, PID A17832207 and this lab report will explore the uses of junit tests and the `less` command.
 
-### step 1
+## Using junit tests to fix a bug in Merge method from ListExamples.java ##
+### step 1 - failure inducing junit test for Merge method
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -31,7 +33,7 @@ public class ListTests {
     }
 }
 ```
-### step 2
+### step 2 - successful junit test for Merge method
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -64,9 +66,11 @@ public class ListTests {
     }
 }
 ```
-### step 3
+### step 3 - Output of both tests
 ![OutputCode](output1.jpg)
-### step 4
+We see in this screenshot that `testMerge2` passes succesfully while `testMerge1` results in a runtime error
+### step 4 - Before and after the bug fix
+Before:
 ```
 // Takes two sorted list of strings (so "a" appears before "b" and so on),
 // and return a new list that has all the strings in both list in sorted order.
@@ -94,7 +98,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
     return result;
   }
 ```
-vs 
+After:
 ```
 // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
@@ -122,11 +126,11 @@ vs
     return result;
   }
 ```
-### Step 5
+### Step 5 - Explanation
 As indicated by the runtime error from step 3, the bug in this program had to do with infinitely executing code. This infinitely executing code occured in the third while loop, where the condition `index2 < list2.size()` runs infinitely unless index2 is incremented. The original code erroneously incremented index1 instead of index2, which not only causes the while loop to never be excited, but also makes no logical sense to increment (since the third while loop adds the elements of list2 not list1). Changing the code `index1 +=1` to `index2 +=1` solves this problem by allowing the while loop to be exited and also iterating through list2 instead of list1.
 
 ## Researching commands - less command ##
-### less -N command
+### less -N
 ex1:
 The command `less -N 911report/chapter-1.txt` produces the output:  
 ```     
@@ -246,6 +250,8 @@ The command `less -f biomed/rr74.txt` produces the output:
 :
 ```
 
+The command line option `-f` allows you to use the `less` command to read files it cannot normally read, such as directories. While in this case it seems to have caused an error when used on the `911report` directory, you could probably use `-f` to at least access the contents of certain normally inacessible files, even if the command is not gauranteed to not result in an error.
+
 ### less -M
 ex1:
 The command `less -M biomed/rr74.txt`
@@ -299,7 +305,9 @@ illness, and from problematic consumption to alcohol use disorder.
 government/Alcohol_Problems/Session2-PDF.txt lines 1-23/637 3%
 ```
 
-###
+The command line option `-M` adds a bit of extra information at the bottom of the terminal as you scroll through the contents of the file the `less` command was used on. This extra information includes the directory starting from the current working directory the `less` command was used in, the current lines of the original file being shown, the total number of lines in the original text file and the percentage of the original file you have scrolled through. This is all useful information to have ready access to. For example, if you didn't know the length of a file or didn't know how deep within a file you have scrolled after using `less`, this option can alleviate both those issues with the additional information provided.
+
+### less -p
 ex1:
 The command `less -pDemocrats 911report/preface.txt` outputs:
 ```
@@ -320,7 +328,7 @@ Democrats chosen by elected leaders from our nation's capital at a time of great
 ```
 
 ex2:
-The command `` outputs:
+The command `less -p"hypobaric hypoxia" biomed/rr74.txt` outputs:
 ```
           ambient conditions, hypobaric hypoxia (simulating an
           altitude of 17,000 feet), or hyberbaric normoxia
@@ -347,6 +355,8 @@ The command `` outputs:
           Frozen lung tissue was homogenized in ice cold 750 μl
 :
 ```
+
+The command line argument `-p` accepts an argument which causes the output to highlight the first instance of that argument in the text file as well as start the `less` command at that first instance of the argument. This acts as a significant time saver, as if you know a keyword or phrase for something you are searching for in a file, you can supply that as the argument and instead of having to search the entire file for that section manually, this option will instead bring you directly to what you are looking for.
 
 ### Citations
 Information about uses of the less command was gathered from:
